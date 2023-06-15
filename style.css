@@ -1,0 +1,634 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Macondo&family=Merienda:wght@600&display=swap');
+
+/* Ajustes en General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cuerpo */
+body {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Contenido Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #00C4FF;
+}
+
+#navbarNav {
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00C4FF;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #fff;
+}
+
+/* Estilos del Dropdown */
+.dropdown-item {
+    color: #333;
+}
+
+.dropdown-item:hover {
+    color: #00C4FF;
+}
+
+/* Contenido */
+#contenido {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.logo-seccion {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border: none;
+    padding: 12px 0px 8px 0px;
+}
+
+.logo-seccion h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* Estilos de la seccion de Gestion de Clientes */
+#seccion2 {
+    width: 100%;
+    background: linear-gradient(rgba(91, 89, 89, 0.767), rgba(0, 0, 0, 0.712)),
+        url("https://images.unsplash.com/photo-1502161254066-6c74afbf07aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXVkaXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 200px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+button {
+    transition: 1s;
+    font-size: 15px;
+    color: #333;
+    background: transparent;
+    border: 2px solid #FC2947;
+    border-radius: 30px;
+    transform: scale(1);
+    transition: transform 1s ease;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+button:hover {
+    transition: 1s;
+    color: #fff;
+    transform: scale(1.2);
+    background: transparent;
+    text-shadow: 1px 1px 6px #FC2947;
+    
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="date"]::placeholder,
+input[type="number"]::placeholder,
+input[type="tel"]::placeholder {
+    color: #ccc;
+}
+
+#tablaClientes th,
+#tablaClientes td {
+    color: #333;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tablaClientes th {
+    background-color: #333;
+    color: #fff;
+}
+
+#tablaClientes tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tablaClientes tr {
+    background-color: #ddd;
+}
+
+/* Estilos específicos para la sección de gestión de clientes */
+h1 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+#tablaClientes {
+    margin-top: 10px;
+}
+
+/* Estilos de la seccion de Modulo de Rutas */
+
+
+/* Estilos de la seccion de Compra de Tiquetes */
+#seccion4 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(24, 24, 24, 0), rgba(0, 0, 0, 0.712)),
+        url("https://images.unsplash.com/photo-1540066019607-e5f69323a8dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXVkaXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos de la seccion de Sistema de Fidelizacion */
+#seccion5 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)),
+        url("https://images.unsplash.com/photo-1540066019607-e5f69323a8dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXVkaXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .logo-seccion h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    .contenedor {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="tel"] {
+        width: 100%;
+    }
+
+    .registrar,
+    button {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #buscador {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #tablaClientes {
+        margin-top: 10px;
+        overflow-x: auto;
+    }
+}
+
+/* Estilos para el formulario en pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    .contenedor {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .contenedor h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .form-group label,
+    .form-group input,
+    .registrar,
+    #buscador {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .registrar:hover {
+        transform: scale(1);
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .ruta-form form {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .card {
+        padding: 0 !important;
+        font-size: 9px;
+        padding: 20px;
+        width: 10rem !important;
+        height: 320px;
+      
+    }
+    .imgc {
+        width: 180px;
+    }
+}
+@media (max-width: 1000px) {
+    .ruta-form form {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .card {
+        padding: 0 !important;
+        font-size: 9px;
+        padding: 20px;
+        width: 10rem !important;
+        height: 320px;
+       
+    }
+    .imgc {
+        width: 180px;
+    }
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 7vh;
+    background: #1B1919;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+}
+
+.footer span {
+    color: #00C4FF;
+    border-color: #1B1919;
+    font-weight: bold;
+}
+
+.footer span:hover {
+    color: #fff;
+    border-color: #1B1919;
+    font-weight: bold;
+}
+
+.span {
+    cursor: pointer;
+}
+
+/* CODIGO PRUEBA */
+/* Estilos adicionales para el contenedor */
+.contenedor {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #a4f3fd8e;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+.contenedor h1 {
+    color: #333;
+    font-size: 20px;
+    /* Reducir el tamaño del título */
+    text-align: center;
+    margin-bottom: 15px;
+    /* Reducir el margen inferior */
+}
+
+/* Estilos para el formulario */
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+/* Estilos para el grupo de formulario */
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Estilos para las etiquetas del formulario */
+.form-group label {
+    color: #333;
+    font-size: 14px;
+    /* Reducir el tamaño de la etiqueta */
+    margin-bottom: 3px;
+    /* Reducir el margen inferior */
+}
+
+/* Estilos para los campos de entrada del formulario */
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    /* Reducir el padding */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    /* Reducir el tamaño de fuente */
+}
+th, tr, td {
+    text-align: center;
+    border: 1px solid gray !important;
+}
+/* Estilos para el botón del formulario */
+.registrar,
+.agregar {
+    width: 97%;
+    padding: 8px;
+    /* Reducir el padding */
+    background-color: #45a04f;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    /* Reducir el tamaño de fuente */
+    margin-left: 5px;
+    margin-right: 15px;
+    transform: scale(1);
+    transition: transform 1s ease;
+}
+
+.registrar:hover {
+    color: #333;
+    transform: scale(1.1);
+    background: transparent;
+    text-shadow: 1px 1px 6px #fff;
+    box-shadow: inset 0 0 20px #0f1810, 0 0 20px #103114;
+}
+
+.agregar:hover {
+    color: #fff;
+    transform: scale(1.1);
+    /* Reducir la escala de transformación */
+    background: transparent;
+    text-shadow: 1px 1px 6px #38E54D;
+    box-shadow: inset 0 0 20px #38E54D, 0 0 20px #38E54D;
+}
+
+/* Estilos para el buscador de clientes */
+#buscador {
+    width: 100%;
+    padding: 8px;
+    /* Reducir el padding */
+    margin-top: 15px;
+    /* Reducir el margen superior */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    /* Reducir el tamaño de fuente */
+}
+
+/* Estilos para la lista de clientes */
+#tablaClientes {
+    margin-top: 15px;
+    /* Reducir el margen superior */
+    /* Agrega estilos adicionales según sea necesario para mostrar la lista de clientes */
+}
+
+/* Seccion 3: Modulo de Rutas */
+#seccion3 {
+    width: 100%;
+    background: linear-gradient(rgba(44, 43, 43, 0.767), rgba(0, 0, 0, 0.712)), url("https://images.unsplash.com/photo-1616422285623-13ff0162193c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGF1ZGl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.ruta-form {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #00bbff3e;
+}
+
+.ruta-form h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.ruta-form form {
+    display: grid;
+    grid-gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.ruta-form label {
+    font-weight: bold;
+}
+
+.ruta-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.ruta-lista {
+    margin-bottom: 20px;
+}
+
+.ruta-lista h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#listaRutas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#listaRutas th,
+#listaRutas td {
+    color: #333;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+#listaRutas th {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+}
+
+#listaRutas tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#listaRutas tr {
+    background-color: #ddd;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.alert h4 {
+    margin-top: 0;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #00c3ff6b;
+    
+}
+.resumen p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.resumen p:last-child {
+    font-weight: bold;
+}
+
+select.form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #00bbff;
+    color: #fff;
+    border: none;
+}
+
+.info {
+    background: linear-gradient(rgba(129, 127, 127, 0.749), rgba(0, 0, 0, 0.302)),
+        url("https://images.unsplash.com/photo-1606664914460-b667528c1acc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80");
+   
+
+    background-size:cover;
+    width: 100%;
+    height: 2200px;
+    background-color: #00bbff44;
+}
+.info h3 {
+    font-size: 15px;
+}
+.card {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    float: left;
+    background-color: #00ddff4e;
+    margin-left: 10px;
+}
+.c4, .c5, .c6 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}   
+.centrar {
+    width: 100%;
+    height: 100%;
+    background-color: #00c3ff1f;
+    justify-content: center;
+    padding-left: 87px;
+}
